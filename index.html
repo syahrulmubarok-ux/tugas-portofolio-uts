@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Website portofolio Syahrul Mubarok, berisi profil, pengalaman kerja, pendidikan, prestasi, dan kontak.">
+    <title>Portofolio Syahrul Mubarok</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="home-header">
+        <div>
+            <p class="eyebrow">PORTOFOLIO PRIBADI</p>
+            <h1>Syahrul Mubarok</h1>
+            <p>Branch Manager · Leadership · Customer Service</p>
+        </div>
+        <form class="home-search" action="search.php" method="GET">
+            <label class="visually-hidden" for="keyword">Cari konten portofolio</label>
+            <input id="keyword" type="search" name="keyword" placeholder="Cari konten..." required>
+            <button type="submit" class="btn-submit">Cari</button>
+        </form>
+    </header>
+
+    <nav class="home-nav" aria-label="Navigasi utama">
+        <a href="index.html" aria-current="page">Beranda</a>
+        <a href="#tentang">Tentang</a>
+        <a href="#pengalaman">Pengalaman</a>
+        <a href="#pendidikan">Pendidikan</a>
+        <a href="#kontak">Kontak</a>
+        <a href="https://www.linkedin.com/in/syahrul-mubarok-487057448/" target="_blank" rel="noopener noreferrer">LinkedIn Saya</a>
+    </nav>
+
+    <div class="container-layout home-layout">
+        <aside class="profile-aside">
+            <img src="assets/images/Screenshot 2026-10-30 075934.png" alt="Foto profil Syahrul Mubarok">
+            <h2>Syahrul Mubarok</h2>
+            <p><strong>Profesi:</strong> Branch Manager</p>
+            <p><strong>Pendidikan:</strong> MAS Al-Kautsar, Karawang</p>
+            <p>Berpengalaman dalam memimpin operasional cabang, mengelola tim, melayani pelanggan, dan mencapai target bisnis.</p>
+            <p><a href="https://www.linkedin.com/in/syahrul-mubarok-487057448/" target="_blank" rel="noopener noreferrer">Lihat profil LinkedIn</a></p>
+        </aside>
+
+        <main>
+            <article>
+                <section id="tentang" aria-labelledby="tentang-heading">
+                    <h2 id="tentang-heading">Tentang Saya</h2>
+                    <p>Saya adalah lulusan MAS Al-Kautsar yang memiliki pengalaman sebagai Branch Manager dan Sales Promotion Girl. Saya terbiasa memimpin operasional, membina tim, melayani pelanggan, mengelola inventaris, serta menyusun laporan dengan teliti. Saya memiliki rata-rata nilai 91,90 dan berorientasi pada pencapaian target serta pertumbuhan bisnis.</p>
+                    <h3>Keahlian</h3>
+                    <ul class="skills-list">
+                        <li>Leadership &amp; Team Management</li>
+                        <li>Customer Service</li>
+                        <li>Sales &amp; Target Achievement</li>
+                        <li>Administrasi &amp; Pelaporan</li>
+                        <li>Inventory Control &amp; Stock Opname</li>
+                        <li>Operasional Cabang</li>
+                    </ul>
+                </section>
+
+                <section id="pengalaman" aria-labelledby="pengalaman-heading">
+                    <h2 id="pengalaman-heading">Pengalaman Kerja</h2>
+                    <section class="experience-card">
+                        <h3>PT Solusi Gadai Jabar</h3>
+                        <p class="experience-meta">Branch Manager</p>
+                        <ul>
+                            <li>Memimpin dan mengawasi operasional harian cabang sesuai Standar Operasional Prosedur (SOP).</li>
+                            <li>Mengarahkan tim untuk mencapai target pertumbuhan bisnis dan profitabilitas cabang.</li>
+                            <li>Membina tim, mengatur jadwal, dan mengevaluasi kinerja karyawan.</li>
+                            <li>Memastikan akurasi laporan serta keamanan aset dan barang jaminan.</li>
+                        </ul>
+                    </section>
+                    <section class="experience-card">
+                        <h3>CV Maju Jaya Gemilang, Karawang</h3>
+                        <p class="experience-meta">Sales Promotion Girl (SPG) · Mei–Desember 2025</p>
+                        <ul>
+                            <li>Melayani pelanggan dan menawarkan produk untuk mendukung target penjualan.</li>
+                            <li>Melakukan stock opname lebih dari 500 item secara berkala.</li>
+                            <li>Menata produk di area display dan gudang.</li>
+                            <li>Membuat rekap penjualan harian dan laporan transaksi.</li>
+                        </ul>
+                    </section>
+                </section>
+
+                <section id="pendidikan" aria-labelledby="pendidikan-heading">
+                    <h2 id="pendidikan-heading">Pendidikan &amp; Prestasi</h2>
+                    <h3>MAS Al-Kautsar, Karawang</h3>
+                    <p><strong>Jurusan:</strong> Ilmu Pengetahuan Alam</p>
+                    <ul>
+                        <li>Masuk 3 besar murid dengan nilai terbaik selama kelas 10–12.</li>
+                        <li>Meraih medali emas nasional bidang studi ekonomi.</li>
+                        <li>Rata-rata nilai 91,90.</li>
+                    </ul>
+                    <p>Aktif dalam OSIS, Pramuka, Paskibra, kegiatan musik, dan kepanitiaan sosialisasi tahunan.</p>
+                </section>
+
+                <section id="kontak" aria-labelledby="kontak-heading">
+                    <h2 id="kontak-heading">Kontak</h2>
+                    <p>Email: <a href="mailto:syahrul.mubarok@rosma.ac.id">syahrul.mubarok@rosma.ac.id</a></p>
+                    <p>LinkedIn: <a href="https://www.linkedin.com/in/syahrul-mubarok-487057448/" target="_blank" rel="noopener noreferrer">Profil Syahrul Mubarok</a></p>
+                    <p>Formulir kontak dan pemrosesan PHP dapat diuji melalui <a href="kontak.php">halaman Kontak (demo PHP lokal)</a>.</p>
+                </section>
+            </article>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Portofolio Syahrul Mubarok.</p>
+    </footer>
+</body>
+</html>

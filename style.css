@@ -1,0 +1,362 @@
+/* style.css */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff7fa;
+    color: #3d2933;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header & Nav */
+header {
+    background-color: #831843;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header form {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.site-navbar {
+    background-color: #a61e5c !important;
+}
+
+.site-navbar .navbar-brand,
+.site-navbar .nav-link {
+    color: white;
+}
+
+.site-navbar .nav-link:hover,
+.site-navbar .nav-link:focus {
+    color: #fce7f3;
+}
+
+.site-navbar .nav-link.active {
+    color: #fce7f3;
+    font-weight: bold;
+}
+
+/* Layout Flexbox Utama */
+.container-layout {
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    gap: 2rem;
+    width: 100%;
+}
+
+/* Aside (Biodata Singkat) */
+aside {
+    flex: 1; /* Mengambil 1 bagian space */
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    height: fit-content;
+    text-align: center;
+}
+
+aside img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: 4px solid #a61e5c;
+    box-shadow: 0 0 0 4px #fce7f3, 0 0 16px rgba(166, 30, 92, 0.35);
+}
+
+/* Main Content */
+main {
+    flex: 3; /* Mengambil 3 bagian space */
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+article img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #831843;
+    color: white;
+    margin-top: auto;
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 1rem;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #e7c7d4;
+    border-radius: 4px;
+}
+.btn-submit {
+    background-color: #a61e5c;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.btn-submit:hover {
+    background-color: #831843;
+}
+.alert {
+    padding: 1rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+.alert-error { background-color: #f8d7da; color: #721c24; }
+.alert-success { background-color: #fce4ed; color: #702746; }
+
+.search-divider {
+    margin: 1rem 0;
+}
+
+.search-result-item {
+    margin-bottom: 1rem;
+}
+
+.skills-section,
+.achievement-card,
+.experience-card {
+    margin-top: 1.5rem;
+}
+
+.skills-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 0.75rem;
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.skills-list li,
+.achievement-card,
+.experience-card {
+    padding: 1rem;
+    border: 1px solid #f1d5e0;
+    border-radius: 8px;
+    background: #fff9fb;
+}
+
+.experience-card h3,
+.achievement-card h3 {
+    color: #831843;
+    font-size: 1.15rem;
+}
+
+.experience-meta {
+    color: #702746;
+    font-weight: bold;
+}
+
+.site-pagination {
+    margin-top: 2rem;
+}
+
+.site-pagination .pagination {
+    gap: 0.5rem;
+}
+
+.site-pagination .page-item:not(:first-child) .page-link {
+    margin-left: 0;
+}
+
+.site-pagination .page-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 3rem;
+    min-height: 3rem;
+    padding: 0.5rem;
+    border: 1px solid #e7c7d4;
+    border-radius: 0.375rem;
+    background-color: white;
+    color: #a61e5c;
+    font-size: 1.125rem;
+}
+
+.site-pagination .page-link:hover {
+    background-color: #fce7f3;
+    border-color: #a61e5c;
+    color: #831843;
+}
+
+.site-pagination .page-link:focus {
+    box-shadow: 0 0 0 0.25rem rgba(166, 30, 92, 0.25);
+}
+
+.site-pagination .page-item.active .page-link {
+    background-color: #a61e5c;
+    border-color: #a61e5c;
+    color: white;
+}
+
+.site-pagination .page-item.disabled .page-link {
+    background-color: #fff9fb;
+    border-color: #e7c7d4;
+    color: #b58698;
+}
+
+.experience-card ul,
+.achievement-card ul {
+    margin-bottom: 0;
+}
+
+/* Responsif untuk Mobile & Tablet */
+@media (max-width: 768px) {
+    .container-layout {
+        flex-direction: column-reverse;
+    }
+    header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .site-pagination .pagination {
+        gap: 0.25rem;
+    }
+
+    .site-pagination .page-link {
+        min-width: 2.25rem;
+        min-height: 2.5rem;
+        padding: 0.375rem;
+    }
+}
+/* Halaman index.html untuk publikasi statis di Vercel */
+.home-header {
+    gap: 1.5rem;
+}
+
+.home-header h1 {
+    margin: 0.15rem 0;
+    font-size: clamp(1.8rem, 4vw, 2.6rem);
+}
+
+.eyebrow {
+    font-size: 0.8rem;
+    letter-spacing: 0.15em;
+    font-weight: bold;
+}
+
+.home-search input {
+    min-width: 220px;
+    padding: 0.55rem 0.75rem;
+    border: 1px solid #e7c7d4;
+    border-radius: 4px;
+}
+
+.home-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.25rem 1.25rem;
+    padding: 0.9rem 1.25rem;
+    background: #a61e5c;
+}
+
+.home-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.home-nav a:hover,
+.home-nav a:focus {
+    color: #fce7f3;
+    text-decoration: underline;
+}
+
+.home-layout {
+    flex-direction: row;
+}
+
+.home-layout main {
+    min-width: 0;
+}
+
+.home-layout article > section + section {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #f1d5e0;
+}
+
+.home-layout h2 {
+    color: #831843;
+    margin-bottom: 0.75rem;
+}
+
+.home-layout h3 {
+    margin: 1rem 0 0.5rem;
+    color: #702746;
+}
+
+.home-layout ul {
+    padding-left: 1.4rem;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+@media (max-width: 768px) {
+    .home-layout {
+        flex-direction: column;
+    }
+
+    .home-search {
+        width: 100%;
+    }
+
+    .home-search input {
+        min-width: 0;
+        flex: 1;
+    }
+
+    .home-nav {
+        justify-content: flex-start;
+    }
+}

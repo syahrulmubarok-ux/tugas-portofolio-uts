@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/(.*\\.php)", "destination": "/404.html" },
+    { "source": "/data/(.*)", "destination": "/404.html" }
+  ]
+}
